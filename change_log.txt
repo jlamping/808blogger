@@ -1,0 +1,130 @@
+[05/02/2018]
+- Desenvolvimento regular.
+
+[29/06/2017]
+
+- User option link included in the default main menu;
+- Fix Auth library;
+- Fix banner module;
+- Setup default database to Sqlite;
+- Clear database folder;
+- Fix Loader error;
+- Update the core of CodeIgniter to 3.1.5
+
+[04/06/2017]
+
+- Renamed classes to first upper-case.
+- Updates on /app/controllers/Users.php
+- Updates on basic website;
+
+[28/05/2017]
+
+- General revision;
+- License updating into the files;
+- Documentation of the methods;
+- Installation of Forensics Profiler from Lonnie Ezell;
+- Fix composer autoload on config.php
+- Update HMVC libraries;
+- Changed default database config to SQLite3;
+- Fix Setup View;
+- Updated .gitignore;
+- Git-Flow adopted to the project;
+- Added empty_table() into MY_Model.php class;
+- Added Export and Clear newsletters email list;
+- Ipban.php model renamed from ipban.php;
+- Bug fix missing 'ipaddress' field on 'newsletter_email' table;
+- Functions valid_cpf() and valid_cnpj() included to MY_Form_validation.php;
+- Enhanced security for fileman;
+- /app/sessions/* removed;
+- Bug fix on configurations module at smtp_ssl value;
+- Small change in Auth.php library;
+- Changed send_mail() method from Wpanel.php library;
+- Included TLS/SSL into configurations panel;
+- Changed config.json and database.php to isolate the basic config info from the main project;
+- Changes into .htaccess file;
+- Introduced the new front-end alerts system;
+- Complete change into send contact messages grom WpanelCMS;
+    - Created send_mail() into wpanel();
+    - Changes in Main() controller;
+    - Changes in contact.php view;
+    - Created migration to fix the contact link in database;
+- Refactoring 'Fotos' views;
+- Refactoring 'Albuns' views;
+- Refactoring 'Agenda' views;
+- Bug fix on configuration admin module;
+- Added manual 'date' from posts;
+- Fixed user_id error on post creation;
+- Changed the configuration admin module;
+- Fixed error on form validation of captcha;
+- Changes on config.php to auto setup the base_url config;
+- Fixed bug on Main.php with wpn_config();
+- I added the count_by () method to MY_Model.php and fixed an error that prevented bulk uploading of photos beyond 5 files;
+- Fixed delete_by() lost in the merge;
+- Cleaning In some folders and codes;
+- Fix some links on user accounts views;
+
+[05-12-2016]
+
+- Included delete_by() into MY_Model;
+- Removed JSON_PRETTY_PRINT from /app/models/Configuracao.php to avoid some errors saving the .json config file in some PHP versions;
+- Updated Codeigniter base framework to version 3.1.2;
+
+[05-11-2016]
+
+- Wpanel helper updated to wpn_activelink accept array as item resource;
+- Fonts-awesome includeds on the project folder;
+- Updated AdminLTE.css files;
+- Fixed style of banners table;
+- Bug fix into contact form, small fixes along the app/controllers/Main.php class;
+- Removed an old code from banners control (an attempt to make drag and drop sortable);
+- Updates on composer.json
+- Default view posts comments included into /app/controllers/Main.php
+- Removed site configurations from sessions;
+- Auto delete to files and folders from album on delete action;
+- Bug fix in the wpanelmenu widget to show menu and submenu;
+- Changes into config.php to select base_url by remote_addr;
+
+[14-09-2016]
+
+- Small changes into default migration file;
+- Changes in /app/models/Configuracao.php, now I did not save the JSON data in the session;
+- Small thanges in the default theme, including a new background image;
+- A base to a custom page included;
+- Link name of Post/Page changed to avoid name conflicts;
+- Favicon included;
+- Minor bug fixes;
+- Readme.md updates;
+- Setup proccess redefinition;
+- Config and Database files redefinition;
+- Fancybox plugin included into album and video galeries;
+- Bug fix in App -> Main() -> albus(), missed limit param in get_by_field() call;
+- Removed .gitignore from /media/banners;
+- Added 3 demo images to banners;
+- Meta tag with the scale fixed on the default template header.php view;
+- Setting up the full path public folder into the MY_Form_validator method to generate captcha;
+- Bug fix in the wpanel_helper -> wpn_activelink() segment param;
+- Updated Codeigniter base framework to version 3.1.0;
+
+[28-08-2016]
+
+- Array implementation changed in order to improve compatibility with versions before PHP 5.5;
+- Readmme updated;
+- Message of database backup on configuration panel;
+- Add link to website on top of admin panel;
+- Full update of Setup module;
+
+[28-05-2016]
+
+- Bug fixed on Banners admin;
+- Solved bug on slidebanner widget;
+- Solved bug generating the captcha con the contact form;
+
+[18-05-2016]
+
+- Change log file included;
+- All migration files resumided into a single file 001_initialdb.php;
+- Removed 'is_unique[users.email]' validation from initial admin form;
+- Solved bug listing permissions on users management;
+- User IP address included on newsletter subscription;
+- Solved bug on database.php creation on setup;
+- Database type choice added on setup form;

@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  
+  # Para redirecionamento para o protocolo HTTPS descomente as linhas abaixo.
+  #---------------------------------------------------------------------------------------
+  # RewriteCond %{HTTPS} off
+  # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L]
+  
+  # !IMPORTANTE! Configure seu RewriteBase aqui e não se esqueça de começar e terminar com
+  #  barras.
+  # 
+  # Exemplo, se seu site fica em
+  # http://www.exemplo.com/mypage/test1
+  # então use
+  # RewriteBase /mypage/test1/
+  #---------------------------------------------------------------------------------------
+  RewriteBase /
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?/$1 [L]
+
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+
+  # Se você não tem mod_rewrite instalado, todos os erros 404 podem ser enviados 
+  # para o index.php
+  #---------------------------------------------------------------------------------------
+  ErrorDocument 404 /index.php
+
+</IfModule>

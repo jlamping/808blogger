@@ -1,0 +1,115 @@
+/**
+ * @copyright Eliel de Paula <dev@elieldepaula.com.br>
+ * @license http://wpanel.org/license
+ */
+
+/**
+ * Estilos para tags
+ */
+body {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+/**
+ * Caso você esteja usando uma imagem na navbar.
+ */
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-brand {
+    padding: 5px 5px;
+}
+
+/**
+ * Este código traz a funcionalidade de sub-menu no dropdown do bootstrap 3.*
+ */
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+.dropdown-submenu.pull-left {
+    float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
+
+/**
+ * Estilos gerais para o site.
+ */
+ .img-slide {
+    width: 100%;
+}
+.wpn-spacer {
+    height: 20px;
+}
+.wpn-container {
+    background-color: #ffffff;
+}
+.wpn-social-buttons {
+    margin-bottom: 10px;
+}
+.wpn-ads {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.wpn-postagens {}
+.wpn-postagens .wpn-capa {
+    height:200px;
+    overflow: hidden;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.wpn-postagem {}
+.wpn-postagem .wpn-capa {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.wpn-sidebar {}
+.menu-sidebar {
+    list-style: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+.wpn-sidebar .sidebar-banner {
+    margin-top: 10px;
+}
+.wpn-sidebar .sidebar-banner .sidebar-item {
+    margin-bottom: 5px;
+}
+.wpn-footer {
+    padding-bottom: 20px;
+}
+.wpn-copyright {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+.wpn-copyright p {
+    margin: 0;
+    padding: 0;
+}
